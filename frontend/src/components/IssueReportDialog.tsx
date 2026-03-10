@@ -75,7 +75,7 @@ export default function IssueReportDialog({ open, onClose, onIssueCreated }: Iss
     setError('');
 
     try {
-      await axios.post('/api/issues', {
+      await axios.post('http://localhost:5001/api/issues', {
         title,
         description,
         category,
